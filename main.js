@@ -2,7 +2,7 @@ let carrito = "";
 let nuevaOperacion = false;
 
 let producto = prompt(
-  "Ingrese el tamaño de la huerta que desea comprar (Chica, Mediana, Grande, Elebada):"
+  "Ingrese el tamaño de la huerta que desea comprar (Chica, Mediana, Grande, Elevada):"
 );
 let cantidad = parseInt(
   prompt(`Ingrese la cantidad de huertas ${producto} que desea comprar:`)
@@ -14,7 +14,7 @@ function hacerCarrito(producto, cantidad) {
     nuevaOperacion = confirm("¿Desea agregar otro producto al carrito?");
     if (nuevaOperacion) {
       producto = prompt(
-        "Ingrese el tamaño huerta que desea comprar (Chica, Mediana, Grande, Elebada):"
+        "Ingrese el tamaño huerta que desea comprar (Chica, Mediana, Grande, Elevada):"
       );
       cantidad = parseInt(
         prompt(`Ingrese la cantidad de huertas ${producto} que desea comprar:`)
@@ -44,7 +44,7 @@ function seleccionarProducto(producto, cantidad) {
       } USD\n`;
       break;
     case "elebada":
-      carrito += `Huertas Elebadas - Cantidad: ${cantidad} - Precio Total: ${
+      carrito += `Huertas Elevadas - Cantidad: ${cantidad} - Precio Total: ${
         50 * cantidad
       } USD\n`;
       break;
